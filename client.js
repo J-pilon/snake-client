@@ -12,6 +12,14 @@ const connect = function() {
     console.log('Server says: ', data);
   });
 
+  conn.on('connect', ()=>{
+    console.log('Successfully connected to server')
+  });
+
+  conn.on('connect', () => {
+    conn.write('Name: JDP');
+  });
+
   return conn;
 }
 
