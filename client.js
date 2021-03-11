@@ -18,6 +18,18 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write('Name: JDP');
+    // setTimeout(() => {
+    //   conn.write('Move: up');
+    // }, 100);
+    // setTimeout(() => {
+    //   conn.write('Move: right');
+    // }, 200);
+    // setTimeout(() => {
+    //   conn.write('Move: right');
+    // }, 300);
+    // setTimeout(() => {
+    //   conn.write('Move: up');
+    // }, 400);
   });
 
   return conn;
